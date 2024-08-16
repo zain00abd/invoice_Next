@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Formsignin = () => {
@@ -10,6 +10,14 @@ const Formsignin = () => {
   const [email, setemail] = useState(null);
   const [password, setpassword] = useState(null);
   const { data: session, status } = useSession();
+
+  // useEffect(() => {
+  //     if(status == "authenticated"){
+  //       signOut()
+  //     }
+
+  // }, []);
+  
 
   const handelsubmit = async (e) => {
     e.preventDefault();

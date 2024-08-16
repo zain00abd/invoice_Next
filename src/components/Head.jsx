@@ -1,6 +1,7 @@
 // @ts-nocheck
 
 import React from "react";
+import { signOut } from "next-auth/react";
 import Link from "next/link";
 import "./stylecomp.css";
 
@@ -50,6 +51,9 @@ const Head = ({ actev }) => {
                     actev == "home" && "active"
                   }`}
                   href="/signin"
+                  onClick={() =>{
+                    signOut()
+                  }}
                 >
                    تسجيل الخروج  <i className="fa-solid fa-right-from-bracket"></i>
                 </Link>
@@ -76,6 +80,9 @@ const Head = ({ actev }) => {
                     actev == "home" && "active"
                   }`}
                   href="/signin"
+                  onClick={() =>{
+                    signOut()
+                  }}
                 >
                   تسجيل الخروج <i className="fa-solid fa-right-to-bracket"></i>
                 </Link>

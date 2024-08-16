@@ -1,3 +1,9 @@
-export { default } from "next-auth/middleware"
+import { withAuth } from "next-auth/middleware"
 
-export const config = { matcher: ["/adduser"] }
+export default withAuth({
+  // Matches the pages config in `[...nextauth]`
+  pages: {
+    signIn: "/signin",
+    error: "/error",
+  },
+})
