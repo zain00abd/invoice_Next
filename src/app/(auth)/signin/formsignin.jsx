@@ -33,6 +33,7 @@ const Formsignin = () => {
     if (res.error) {
       return;
     }
+    signIn()
     router.replace("/");
 
   };
@@ -77,7 +78,7 @@ const Formsignin = () => {
         </p>
       </div>
 
-      <button type="submit"> تسجيل الدخول </button>
+      <button type="submit" > تسجيل الدخول </button>
       <br />
       <p>{status}</p>
 
