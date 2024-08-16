@@ -37,9 +37,9 @@ export const authOptions = {
   secret: process.env.NEXTAUTH_SECRET,
 
   pages: {
-    signIn: "/signin",
+    signIn: "https://invoice-next-iota.vercel.app/signin",
   },
-  
+
 };
 
 const handler = NextAuth(authOptions);
