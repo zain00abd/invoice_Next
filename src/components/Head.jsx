@@ -46,17 +46,17 @@ const Head = ({ actev }) => {
 
             <ul className="navbar-nav justify-content-start flex-grow-1">
             <li className="nav-item text-center item-align-center d-none d-lg-flex">
-                <Link
+                <button
                   className={`nav-link bg-danger m-auto ${
                     actev == "home" && "active"
                   }`}
-                  href="/signin"
+                  
                   onClick={() =>{
                     signOut()
                   }}
                 >
                    تسجيل الخروج  <i className="fa-solid fa-right-from-bracket"></i>
-                </Link>
+                </button>
               </li>
             </ul>
 
@@ -75,17 +75,17 @@ const Head = ({ actev }) => {
             {/*  end nav  */}
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item d-lg-none text-center">
-                <Link
+                <button
                   className={`nav-link bg-danger w-50 m-auto ${
                     actev == "home" && "active"
                   }`}
-                  href="/signin"
+                  
                   onClick={() =>{
                     signOut()
                   }}
                 >
                   تسجيل الخروج <i className="fa-solid fa-right-to-bracket"></i>
-                </Link>
+                </button>
               </li>
 
               <li className="nav-item">

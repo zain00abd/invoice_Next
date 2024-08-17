@@ -33,7 +33,6 @@ const Formsignin = () => {
     if (res.error) {
       return;
     }
-    signIn()
     router.replace("/");
 
   };
