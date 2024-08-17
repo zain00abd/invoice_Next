@@ -34,7 +34,7 @@ export const authOptions = {
     }),
   ],
 
-  secret: "EXRUztpztZ4G8z/tacBW7nS4nAWpEHzYXyMFhtwYnZQ=",
+  secret: `${process.env.NEXTAUTH_SECRET}`,
 
   pages: {
     signIn: "/signin",
