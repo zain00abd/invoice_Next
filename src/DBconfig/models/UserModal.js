@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
    name: String,
    email: String,
    password: String,
-   customers: Array,
 
  });
 
